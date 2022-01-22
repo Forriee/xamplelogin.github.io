@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Register </title>
+    <link rel="stylesheet" href="Rstyle.css">
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #060c21;
+    }
+    .box{
+       position:absolute;
+       border-radius: 20px;
+       width: 320px;
+       background: #060c21;
+       padding: 20px 20px;
+       box-sizing: border-box;
+       left: 50%;
+       top: 50%;
+       transform: translate(-50%, -50%);
+    }
+    .box:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+.box:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+.box:before,
+.box:after
+{
+  background: linear-gradient(235deg,#89ff00,
+    #060c21,#00bcd4);
+} 
+    h1{
+      text-align: center;
+      font-family: sans-serif;
+      color:#fff;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+    input{
+      width:100%;
+      background: none;
+      border: 1px solid;
+      color:black;
+      border-radius: 3px;
+      padding: 6px 20px;
+      box-sizing: border-box;
+      margin-bottom:20px;
+    }
+    input[type="button"]:hover{
+      background: #bac675;
+      border-radius:5px;
+      cursor:pointer;
+      transition: 0.5s;
+    }
+    ::placeholder{
+      color:#ffff;
+    }
+  </style>
+
+  <body>
+    <div class="box">
+        <form>
+          <h1>Sign Up</h1>
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Username">
+          <input type="text" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Confirm Password">
+          <a href="home.html">
+          <input type="button" value="Sign Up">
+          </a>
+        </form>
+    </div>
+
+  </body>
+</html>
